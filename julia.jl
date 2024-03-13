@@ -9,6 +9,10 @@ begin
         return (pt.x * ftr, pt.y * ftr)
     end
 
+    function scalePoints(pt::Points, ftr::Int64)
+        return (pt.x * ftr, pt.y * ftr)
+    end
+
     function translatePoint(pt::Points, δx::Float64, δy::Float64)
         return (pt.x + δx, pt.y + δy)
     end
@@ -17,3 +21,6 @@ begin
         return (pt.x + δx, pt.y + δy)
     end
 end
+
+aa = Points(3434, 3434)
+scalePoints(aa, 5)
